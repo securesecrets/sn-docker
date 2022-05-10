@@ -1,0 +1,9 @@
+services:
+  localsecret:
+    image: ghcr.io/scrtlabs/localsecret:latest
+    ports:
+      - 9091:9091
+      - 26657:26657
+      - 1317:1317
+      - 5000:5000
+      - 26656:26656
