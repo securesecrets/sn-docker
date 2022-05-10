@@ -1,4 +1,4 @@
-FROM enigmampc/secret-network-sw-dev:latest
+FROM ghcr.io/scrtlabs/localsecret:latest
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -q -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustup default stable
