@@ -1,4 +1,4 @@
-FROM ghcr.io/scrtlabs/localsecret:latest
+FROM ghcr.io/scrtlabs/localsecret:beta-nested-attributes
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -q -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustup default nightly
