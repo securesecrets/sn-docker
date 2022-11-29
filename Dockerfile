@@ -7,5 +7,5 @@ RUN apt-get update &&  \
     apt-get install -y --no-install-recommends \
     clang-10 && \
     rm -rf /var/lib/apt/lists/*
-RUN apt-get install binaryen -y
+RUN apt install binaryen -y
 RUN apt install clang -y
