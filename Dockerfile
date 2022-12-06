@@ -1,4 +1,4 @@
-FROM ghcr.io/scrtlabs/localsecret:v1.6.0-rc.2
+FROM ghcr.io/scrtlabs/localsecret:v0.0.0-for-shade
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -q -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustup default nightly
