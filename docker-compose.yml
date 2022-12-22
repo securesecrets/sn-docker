@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - ./:/root/.localsecret
+      - localsecret_data:/root/
     ports:
       - 9091:9091
       - 26657:26657
@@ -14,3 +14,8 @@ services:
       - 26656:26656
 volumes:
   localsecret_data:
+    driver: local
+    driver_opts:
+      type: none
+      device: ${PWD}/localsecret_data
+      o: bind
