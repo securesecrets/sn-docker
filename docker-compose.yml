@@ -5,7 +5,7 @@ services:
       context: .
       dockerfile: Dockerfile
     volumes:
-      - localsecret_data:/root/.localsecret
+      - ./:/root/.localsecret
     ports:
       - 9091:9091
       - 26657:26657
