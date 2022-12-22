@@ -12,3 +12,4 @@ RUN apt install binaryen -y
 RUN apt install clang -y
 RUN apt-get install nano
 ENV TERM xterm
+VOLUME /root/
