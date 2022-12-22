@@ -17,5 +17,5 @@ volumes:
     driver: local
     driver_opts:
       type: none
-      device: ~/localsecret_data
+      device: ~/sn-docker/data
       o: bind
