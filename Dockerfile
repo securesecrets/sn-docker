@@ -10,3 +10,5 @@ RUN apt-get update &&  \
 RUN apt update && apt install
 RUN apt install binaryen -y
 RUN apt install clang -y
+RUN apt-get install nano
+ENV TERM xterm
