@@ -3,6 +3,21 @@ This repository allows us to deploy the SN-Docker-ENV project using a Docker Com
 
 Once you have compose installed on the server, you can run the following command to deploy the project:
 
+Install Docker
+```
+curl -fsSL https://get.docker.com -o get-docker.sh
+DRY_RUN=1 sudo sh ./get-docker.sh
+```
+
+
+Run docker and sn-network
 ```
 sudo docker compose up -d
 ```
+
+
+Got get HTTPS installed just use Caddy and the Caddyfile in the root of the server.
+
+1. Install Caddy https://caddyserver.com/docs/install
+2. Copy the Caddyfile attached to this message to /etc/caddy/Caddyfile
+3. Run `sudo caddy start --config /etc/caddy/Caddyfile`
