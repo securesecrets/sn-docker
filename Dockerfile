@@ -1,4 +1,4 @@
-FROM ghcr.io/scrtlabs/localsecret:v1.6.0
+FROM ghcr.io/scrtlabs/localsecret:v1.7.0-beta.2
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -q -y
 ENV PATH="/root/.cargo/bin:${PATH}"
 RUN rustup default nightly
@@ -12,3 +12,4 @@ RUN apt install binaryen -y
 RUN apt install clang -y
 RUN apt-get install nano
 ENV TERM xterm
+VOLUME /root
